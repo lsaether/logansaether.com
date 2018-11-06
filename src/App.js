@@ -111,24 +111,24 @@ class App extends Component {
         <Left windowWidth={this.state.windowWidth}>
           <h2>Current: </h2>
           <a href="https://en.wikipedia.org/wiki/Blockchain">
-            <img src={blockchain} style={{ height: '50px' }} />
+            <img alt="blockchain" src={blockchain} style={{ height: '50px' }} />
           </a>
           <p style={{ fontSize: this.state.windowWidth > 760 ? '0.8em' : '0.7em' }}>Blockchain Entreprenuer</p>
             
           <a href="https://trustless.design">
-            <img src={trustless} style={{ height: '50px' }} />
+            <img alt="trustless" src={trustless} style={{ height: '50px' }} />
           </a>
           <p style={{ fontSize: this.state.windowWidth > 760 ? '0.8em' : '0.7em' }}>Co-Founder and Auditor</p>
 
           <h2>Past: </h2>
           <a href="https://chronologic.network">
-            <img src={chrono} style={{ height: '50px' }} />
+            <img alt="chronologic" src={chrono} style={{ height: '50px' }} />
           </a>
           <p style={{ fontSize: this.state.windowWidth > 760 ? '0.8em' : '0.7em' }}>Smart Contract Engineer</p>
 
           <h2>Recognitions: </h2>
           <a href="https://medium.com/melonport-blog/reinventing-finance-53-hours-and-50-hackers-later-a18bdea1c5c1">
-            <img src={reinvent} style={{ height: '50px' }} />
+            <img alt="reinvent-finance" src={reinvent} style={{ height: '50px' }} />
           </a>
           <p style={{ fontSize: this.state.windowWidth > 760 ? '0.8em' : '0.7em' }}>Grand Prize Winner</p>
         </Left>
