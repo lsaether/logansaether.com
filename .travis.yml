@@ -1,0 +1,19 @@
+dist: trusty
+sudo: required
+group: beta
+language: node_js
+node_js:
+- '8'
+cache:
+  directories:
+  - node_modules
+install: npm install
+script:
+- npm run build
+before_deploy:
+- npm run build
+deploy:
+  skip_cleanup: true
+  provider: firebase
+  token:
+    secure: LMIK4f9ImkXyUVOWapCE8F7zwrDL+XeljDP2Z0vAxNRs5vbVfeU7yRywARwKXDmAFEMRJrYpsr0qfbvvNRz6mB1zc8MWlxErGCNO/1FFPmGaA+va/woia3hTL4chg1kTGdyr8H8lMKBtKTOSflox1I+ugghyV9TAVpJjGnOdFPFaRlwL0UDqmMcOm008XNJ3zm8mdVvynV5crdts7N55nyPhlKtHCnrEi2HU6hQ6zWmrWpND+/aEXY4GPd/iKayXob5dqL6SaBN9kHD3o/9WdQY381dgXVhQfRpmZkmbqEN7iVpkoFAGzquRUxVr+WH402UyP3I3zKxGHHAfmB8imJMVJiEY0kOI/vKhMMLKAQcAKWKpVgj2q42Oi9tpsHR7crBin4QvZ51ZZUqaYakm3lBX04IphkFU0GJuBLCa3QB6+UVdX5zI1aF0pGQ+fLet93Y3in7qP3ofvjaFH20Kv5imwseF3Cmj9xRcamNGJNna03NvQW8nRhCxvcYS53OHeRSF+5I/VL+3MusJT/AEyS75SEgvN9/hgXoQnrYlQwnwe4FapA+muQdZULI75IPD19OGPRuwnWhljSNfpV9qPsdx9eb3WHZNV385/lmRLzSb3KpY3Bewtl2kS2SOqPreT5KuU+Xa2oHC/vkjEt0ijfae1VKMClzzNqEUCgPUP1k=
