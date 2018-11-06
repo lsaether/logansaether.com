@@ -89,7 +89,7 @@ class App extends Component {
 
         <Right windowWidth={this.state.windowWidth}>
           <h2 style={{ color: '#FFF' }}>Logan Saether</h2>
-          <img src={logan} style={{ height: '18em', paddingBottom: '10%' }} />
+          <img alt="logan" src={logan} style={{ height: '18em', paddingBottom: '10%' }} />
           <SocialBar windowWidth={this.state.windowWidth}>
             {/* Code (GitHub) */}
             <a href="https://github.com/lsaether">
