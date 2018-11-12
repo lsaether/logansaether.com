@@ -92,17 +92,17 @@ class App extends Component {
           <img alt="logan" src={logan} style={{ height: '18em', paddingBottom: '10%' }} />
           <SocialBar windowWidth={this.state.windowWidth}>
             {/* Code (GitHub) */}
-            <a href="https://github.com/lsaether">
+            <a href="https://github.com/lsaether" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faLaptopCode} />
             </a>
 
             {/* Writing (94arg.com) */}
-            <a href="https://medium.com/@lsaether">
+            <a href="https://medium.com/@lsaether" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faPencilAlt} />
             </a>
 
             {/* Ethereum Wallet (devops199.eth) */}
-            <a href="https://etherscan.io">
+            <a href="https://etherscan.io" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faEthereum} />
             </a>
           </SocialBar>
@@ -110,24 +110,24 @@ class App extends Component {
 
         <Left windowWidth={this.state.windowWidth}>
           <h2>Current: </h2>
-          <a href="https://en.wikipedia.org/wiki/Blockchain">
+          <a href="https://en.wikipedia.org/wiki/Blockchain" target="_blank" rel="noopener noreferrer">
             <img alt="blockchain" src={blockchain} style={{ height: '50px' }} />
           </a>
           <p style={{ fontSize: this.state.windowWidth > 760 ? '0.8em' : '0.7em' }}>Blockchain Entreprenuer</p>
             
-          <a href="https://trustless.design">
+          <a href="https://trustless.design" target="_blank" rel="noopener noreferrer">
             <img alt="trustless" src={trustless} style={{ height: '50px' }} />
           </a>
           <p style={{ fontSize: this.state.windowWidth > 760 ? '0.8em' : '0.7em' }}>Co-Founder and Auditor</p>
 
           <h2>Past: </h2>
-          <a href="https://chronologic.network">
+          <a href="https://chronologic.network" target="_blank" rel="noopener noreferrer">
             <img alt="chronologic" src={chrono} style={{ height: '50px' }} />
           </a>
           <p style={{ fontSize: this.state.windowWidth > 760 ? '0.8em' : '0.7em' }}>Smart Contract Engineer</p>
 
           <h2>Recognitions: </h2>
-          <a href="https://medium.com/melonport-blog/reinventing-finance-53-hours-and-50-hackers-later-a18bdea1c5c1">
+          <a href="https://medium.com/melonport-blog/reinventing-finance-53-hours-and-50-hackers-later-a18bdea1c5c1" target="_blank" rel="noopener noreferrer">
             <img alt="reinvent-finance" src={reinvent} style={{ height: '50px' }} />
           </a>
           <p style={{ fontSize: this.state.windowWidth > 760 ? '0.8em' : '0.7em' }}>Grand Prize Winner</p>
