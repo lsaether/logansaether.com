@@ -5,10 +5,10 @@ import { faPencilAlt, faLaptopCode } from '@fortawesome/free-solid-svg-icons';
 import { faEthereum } from '@fortawesome/free-brands-svg-icons';
 
 import logan from './logan_nobg.svg';
-import reinvent from './reinvent.png';
 import chrono from './chrono.png';
+import convergent from './logo3.png';
+import reinvent from './reinvent.png';
 import trustless from './trustless.png';
-import blockchain from './blockchain.jpeg';
 
 const AppWrapper = styled.div`
   background: red;
@@ -110,27 +110,27 @@ class App extends Component {
 
         <Left windowWidth={this.state.windowWidth}>
           <h2>Current: </h2>
-          <a href="https://en.wikipedia.org/wiki/Blockchain" target="_blank" rel="noopener noreferrer">
-            <img alt="blockchain" src={blockchain} style={{ height: '50px' }} />
+          <a href="https://convergent.cx" target="_blank" rel="noopener noreferrer">
+            <img alt="convergent" src={convergent} style={{ height: '50px' }} />
           </a>
-          <p style={{ fontSize: this.state.windowWidth > 760 ? '0.8em' : '0.7em' }}>Blockchain Entreprenuer</p>
+          <p style={{ fontSize: this.state.windowWidth > 760 ? '0.8em' : '0.7em', marginTop: '-2.5px' }}>Initiator</p>
             
           <a href="https://trustless.design" target="_blank" rel="noopener noreferrer">
-            <img alt="trustless" src={trustless} style={{ height: '50px' }} />
+            <img alt="trustless" src={trustless} style={{ height: '50px', marginTop: '5px' }} />
           </a>
-          <p style={{ fontSize: this.state.windowWidth > 760 ? '0.8em' : '0.7em' }}>Co-Founder and Auditor</p>
+          <p style={{ fontSize: this.state.windowWidth > 760 ? '0.8em' : '0.7em', marginTop: '-2.5px' }}>Co-Founder and Auditor</p>
 
           <h2>Past: </h2>
           <a href="https://chronologic.network" target="_blank" rel="noopener noreferrer">
             <img alt="chronologic" src={chrono} style={{ height: '50px' }} />
           </a>
-          <p style={{ fontSize: this.state.windowWidth > 760 ? '0.8em' : '0.7em' }}>Smart Contract Engineer</p>
+          <p style={{ fontSize: this.state.windowWidth > 760 ? '0.8em' : '0.7em', marginTop: '-2.5px' }}>Smart Contract Engineer</p>
 
           <h2>Recognitions: </h2>
           <a href="https://medium.com/melonport-blog/reinventing-finance-53-hours-and-50-hackers-later-a18bdea1c5c1" target="_blank" rel="noopener noreferrer">
             <img alt="reinvent-finance" src={reinvent} style={{ height: '50px' }} />
           </a>
-          <p style={{ fontSize: this.state.windowWidth > 760 ? '0.8em' : '0.7em' }}>Grand Prize Winner</p>
+          <p style={{ fontSize: this.state.windowWidth > 760 ? '0.8em' : '0.7em', marginTop: '-2.5px' }}>Grand Prize Winner</p>
         </Left>
 
       </AppWrapper>
