@@ -102,7 +102,7 @@ class App extends Component {
             </a>
 
             {/* Ethereum Wallet (devops199.eth) */}
-            <a href="https://etherscan.io" target="_blank" rel="noopener noreferrer">
+            <a href="https://etherscan.io/address/devops199.eth" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faEthereum} />
             </a>
           </SocialBar>
