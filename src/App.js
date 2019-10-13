@@ -4,11 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPencilAlt, faLaptopCode } from '@fortawesome/free-solid-svg-icons';
 import { faEthereum } from '@fortawesome/free-brands-svg-icons';
 
-import logan from './logan_nobg.svg';
-import chrono from './chrono.png';
-import convergent from './logo3.png';
-import reinvent from './reinvent.png';
-import trustless from './trustless.png';
+import Logan from './assets/logan_nobg.svg';
 
 const AppWrapper = styled.div`
   background: red;
@@ -19,7 +15,7 @@ const AppWrapper = styled.div`
   height: 100vh;
   width: 100vw;
   font-family: 'KoHo'
-`
+`;
 
 const Left = styled.div`
   background: #FFF;
@@ -37,25 +33,25 @@ const Left = styled.div`
       color: #3B00FF;
     }
   }
-`
+`;
+
 const Right = styled.div`
   background: #000;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column;
   justify-content: space-around;
   align-items: center;
   margin: 0;
   padding: 0;
   width: ${props => props.windowWidth > 760 ? '50%' : '100%'};
-`
+`;
 
 const SocialBar = styled.div`
   display: flex;
   flex-flow: row wrap;
-  font-size: ${props => props.windowWidth > 760 ? '1.6em' : '1.3em'};
+  font-size: ${props => props.windowWidth > 760 ? '30px' : '1.3em'};
   color: #FFF;
   width: ${props => props.windowWidth > 760 ? '50%' : '70%'};
-  padding-bottom: 5%;
   justify-content: space-around;
   a {
     color: #FFF;
@@ -64,7 +60,12 @@ const SocialBar = styled.div`
       color: #7B9EF6;
     }
   }
-`
+`;
+
+const Centerpiece = styled.img`
+  height: 22em;
+  margin-top: -50px;
+`;
 
 class App extends Component {
   constructor() {
@@ -88,8 +89,8 @@ class App extends Component {
       <AppWrapper>
 
         <Right windowWidth={this.state.windowWidth}>
-          <h2 style={{ color: '#FFF' }}>Logan Saether</h2>
-          <img alt="logan" src={logan} style={{ height: '18em', paddingBottom: '10%' }} />
+          <h2 style={{ color: '#FFF', fontWeight: '600', fontSize: '36px', margin: '0', padding: '0' }}>Logan Saether</h2>
+          <Centerpiece alt="Logan" src={Logan} />
           <SocialBar windowWidth={this.state.windowWidth}>
             {/* Code (GitHub) */}
             <a href="https://github.com/lsaether" target="_blank" rel="noopener noreferrer">
@@ -109,7 +110,7 @@ class App extends Component {
         </Right>
 
         <Left windowWidth={this.state.windowWidth}>
-          <h2>Current: </h2>
+          {/* <h2>Current: </h2>
           <a href="https://convergent.cx" target="_blank" rel="noopener noreferrer">
             <img alt="convergent" src={convergent} style={{ height: '50px' }} />
           </a>
@@ -130,7 +131,7 @@ class App extends Component {
           <a href="https://medium.com/melonport-blog/reinventing-finance-53-hours-and-50-hackers-later-a18bdea1c5c1" target="_blank" rel="noopener noreferrer">
             <img alt="reinvent-finance" src={reinvent} style={{ height: '50px' }} />
           </a>
-          <p style={{ fontSize: this.state.windowWidth > 760 ? '0.8em' : '0.7em', marginTop: '-2.5px' }}>Grand Prize Winner</p>
+          <p style={{ fontSize: this.state.windowWidth > 760 ? '0.8em' : '0.7em', marginTop: '-2.5px' }}>Grand Prize Winner</p> */}
         </Left>
 
       </AppWrapper>
